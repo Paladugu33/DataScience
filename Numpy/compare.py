@@ -1,5 +1,7 @@
 import time
-size_of_vec = 1000
+import numpy as np
+
+size_of_vec = 10000
 
 def pure_python_version():
     t1 = time.time()
@@ -21,4 +23,4 @@ def numpy_version():
 t1 = pure_python_version()
 t2 = numpy_version()
 print(t1, t2)
-print("Numpy is in this example " + str(t1/t2) + " faster!")
+print("this example Numpy is " + str(t1/t2) + " faster!")
